@@ -2,7 +2,8 @@ import React from 'react';
 
 const NavBar = () => {
   return (
-    <div className="bg-blue-700 w-full h-10 flex gap-6 justify-center items-center text-xl font-bold text-white fixed top-0 z-10">
+    <div className="bg-blue-700 w-screen h-10 flex gap-6 justify-center items-center text-xl font-bold text-white fixed top-0 z-10 rounded-b-lg
+    ">
       <a href="/Home" className="hover:text-gray-300">
         Home
       </a>
