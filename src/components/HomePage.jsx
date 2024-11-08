@@ -4,7 +4,7 @@ import fototim2 from '../assets/fototim2.jpeg';
 import fototim3 from '../assets/fototim3.jpeg';
 
 const HomePage = () => {
-  const images = [fototim1, fototim2, fototim3];
+  const images = [fototim3, fototim1, fototim2];
 
   const [currentImage, setCurrentImage] = useState(0);
 
@@ -17,7 +17,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-screen bg-gray-100 pt-16"> {/* Added pt-16 */}
+    <div className="relative w-full h-screen bg-gray-100 pt-16"> 
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${images[currentImage]})` }}
@@ -28,7 +28,7 @@ const HomePage = () => {
       <div className="relative z-10 flex justify-center items-center w-full h-full text-center">
         <div className="text-white">
           <h1 className="shadow-lg text-white text-4xl sm:text-5xl md:text-6xl font-bold mb-4">Where vision turns into reality.</h1>
-          <p className="text-lg sm:text-xl text-gray-100 shadow-lg mb-6">Hi, im Muhammad Fatih Zamzami, and this is my journey</p>
+          <p className="text-lg sm:text-xl text-gray-100 shadow-lg mb-6">Hi, im Muhammad Fatih Zamzami, and this is a glimpse of my journey</p>
           <a href="/MainPage" className="bg-yellow-300 hover:bg-yellow-200 text-white px-6 py-3 rounded-full text-lg font-semibold transition duration-200">
             lets go.
           </a>
