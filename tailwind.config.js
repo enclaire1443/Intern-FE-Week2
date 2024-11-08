@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['"Noto Serif"', 'serif'],   // Global font
+        sourGummy: ['"Sour Gummy"', 'sans-serif'], // Custom font for specific use
+      },
+    },
   },
   plugins: [],
 }

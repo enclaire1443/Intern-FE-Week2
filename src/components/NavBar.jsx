@@ -2,23 +2,22 @@ import React from 'react';
 
 const NavBar = () => {
   return (
-    <div className="bg-blue-700 w-screen h-10 flex gap-6 justify-center items-center text-xl font-bold text-white fixed top-0 z-10 rounded-b-lg
-    ">
-      <a href="/Home" className="hover:text-gray-300">
-        Home
+    <div className="bg-blue-600 w-screen h-16 flex justify-between items-center text-white fixed top-0 z-10 rounded-b-lg shadow-md px-4">
+      <a href="/Home" className="text-xl font-sourGummy font-bold hover:bg-blue-500 p-2 rounded transition duration-200">
+        Fatih
       </a>
-      <a href="#About" className="hover:text-gray-300">
-        
-        About
-      </a>
-      <a href="#Projects" className="hover:text-gray-300">
 
-        Projects
-      </a>
-      <a href="#Experience" className="hover:text-gray-300">
-        
-        Experience
-      </a>
+      <div className="flex gap-6 text-base font-semibold">
+        <a href="#About" className="hover:bg-blue-500 p-2 rounded transition duration-200">
+          About
+        </a>
+        <a href="#Projects" className="hover:bg-blue-500 p-2 rounded transition duration-200">
+          Projects
+        </a>
+        <a href="#Experience" className="hover:bg-blue-500 p-2 rounded transition duration-200">
+          Experience
+        </a>
+      </div>
     </div>
   );
 };
