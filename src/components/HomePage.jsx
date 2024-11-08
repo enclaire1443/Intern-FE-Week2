@@ -27,9 +27,9 @@ const HomePage = () => {
 
       <div className="relative z-10 flex justify-center items-center w-full h-full text-center">
         <div className="text-white">
-          <h1 className="shadow-lg text-yellow-100 text-4xl sm:text-5xl md:text-6xl font-bold mb-4">Where vision turns into reality.</h1>
-          <p className="text-lg sm:text-xl shadow-lg mb-6">Hi, im Muhammad Fatih Zamzami, and this is my journey</p>
-          <a href="/MainPage" className="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-full text-lg font-semibold transition duration-200">
+          <h1 className="shadow-lg text-white text-4xl sm:text-5xl md:text-6xl font-bold mb-4">Where vision turns into reality.</h1>
+          <p className="text-lg sm:text-xl text-gray-100 shadow-lg mb-6">Hi, im Muhammad Fatih Zamzami, and this is my journey</p>
+          <a href="/MainPage" className="bg-yellow-300 hover:bg-yellow-200 text-white px-6 py-3 rounded-full text-lg font-semibold transition duration-200">
             lets go.
           </a>
         </div>

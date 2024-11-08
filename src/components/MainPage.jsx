@@ -2,50 +2,49 @@ import React from 'react';
 import fotodiri from '../assets/fotodiri1.jpeg';
 import fotocontactme from '../assets/fotocontactme.png';
 
-export const MainPage = () => {
+const MainPage = () => {
   return (
-   <main className="bg-blue-300 pt-10">
-    <section id="About" className="h-100 bg-blue-300 p-10">
-      <h2 className="text-3xl font-bold mb-4">About Me</h2>
-      
-      <div className="flex items-center gap-4">
-        <img src={fotodiri} alt="Muhammad Fatih Zamzami" className="w-82 h-52 object-cover rounded-lg shadow-lg" />
-        <div className="bg-yellow-200 p-4 w h-52 rounded-lg shadow-lg overflow-hidden">
-         <p className="h-full overflow-hidden text-ellipsis whitespace-normal">My name is Muhammad Fatih Zamzami, or just Fatih for short. I'm an Electrical Engineering freshman at Universitas Indonesia. I love coding and learning new things. I'm currently doing internship at Exercise FTUI, at the Software - FE division. I'm currently working on Frontend Web Development with ReactJS and TailwindCSS. </p>
-         </div>
-      </div>
-    <div className="text-xs w-24 p-4">
-      <div className="flex">
-        <span className="font-bold w-24">Instagram:</span>
-        <span>@fthzami</span>
-      </div>
-      <div className="flex">
-        <span className="font-bold w-24">Line:</span>
-        <span>haiinifatih</span>
-      </div>
-      <div className="flex">
-        <span className="font-bold w-24">Gmai:</span>
-        <span>muhfatihzamzami@gmail.com</span>
-      </div>
-    </div>
-    </section>
-    
-    <section id="Projects" className="h-screen p-10 bg-blue-300">
-      <h2 className="text-3xl font-bold mb-4">Projects</h2> 
-      <div className="flex flex-col gap-4 overflow-hidden">
-        <div className="bg-yellow-200 p-4 w h-70 bg-fixed rounded-lg shadow-lg flex overflow-hidden">
-          <img src={fotocontactme} alt="project1" className="h-40"/>
-          <p className="px-4 h-full overflow-hidden text-ellipsis whitespace-normal">This is my first project on Exercise FTUI Internship 2024, its a contact me page that i made using pure HTML and TailwindCSS. It also includes a JavaScript script that automatically brings you to the email page.</p>
-        </div>
+    <main className="bg-gradient-to-r from-blue-500 to-blue-700 font-sans">
 
-      </div>
-    </section>
-    
-    <section id="Experience" className="h-screen p-10 bg-blue-300">
-      <h2 className="text-3xl font-bold mb-4">Experience</h2>
-    </section>
-   </main>
+      <section id="Home" className="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4">
+        <h1 className="text-6xl font-bold mb-4">Welcome to My Portfolio</h1>
+        <p className="text-xl mb-6">Showcasing my skills, projects, and experiences</p>
+        <a href="#About" className="text-lg bg-yellow-400 text-gray-900 py-2 px-6 rounded-full hover:bg-yellow-300 transition duration-200">Explore More</a>
+      </section>
+
+      <section id="About" className="h-screen flex flex-col lg:flex-row justify-center items-center bg-gradient-to-r from-white to-yellow-100 px-8 py-20">
+        <div className="lg:w-1/2">
+          <img src={fotodiri} alt="Muhammad Fatih Zamzami" className="w-64 h-64 object-cover rounded-full shadow-xl transform transition duration-500 hover:scale-105" />
+        </div>
+        <div className="lg:w-1/2 text-center lg:text-left mt-8 lg:mt-0">
+          <h2 className="text-4xl font-semibold text-gray-800 mb-4">About Me</h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            I'm Muhammad Fatih Zamzami, a passionate Electrical Engineering student at Universitas Indonesia. With a strong interest in coding and technology, I am currently an intern at Exercise FTUI, working on Frontend Web Development using ReactJS and TailwindCSS.
+          </p>
+        </div>
+      </section>
+
+      <section id="Projects" className="h-screen bg-gradient-to-r from-blue-500 to-blue-700 text-gray-900 px-8 py-20 flex flex-col justify-center items-center">
+  <h2 className="text-4xl font-semibold mb-6 text-white text-center">My Projects</h2>
+  <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
+    <div className="bg-yellow-200 p-6 rounded-lg shadow-xl w-full lg:w-1/2 transform transition duration-500 hover:scale-105">
+      <img src={fotocontactme} alt="Project 1" className="w-full h-48 object-cover rounded-lg mb-4" />
+      <h3 className="text-xl font-semibold mb-2">Contact Me Page</h3>
+      <p className="text-lg">This is a contact me page that i develop during my time in Exercise FTUI Internship 2024. It uses HTML, TailwindCSS, and a JavaScript script to execute the program</p>
+    </div>
+  </div>
+</section>
+
+      <section id="Experience" className="h-screen bg-gradient-to-r from-white to-yellow-100 px-8 py-20 shadow-lg">
+        <h2 className="text-4xl font-semibold text-gray-800 mb-6 text-center">Experience</h2>
+        <div className="text-center">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            sdkjnknjdscvnjdsvjnsdvjnvdjnsjdvsjnds
+          </p>
+        </div>
+      </section>
+    </main>
   );
-}
+};
 
 export default MainPage;
