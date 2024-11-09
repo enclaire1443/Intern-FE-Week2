@@ -3,22 +3,26 @@ import fotodiri from '../assets/fotodiri1.jpeg';
 import fotocontactme from '../assets/fotocontactme.png';
 
 const MainPage = () => {
-  return (
-    <main className="bg-gradient-to-r from-gray-800 to-gray-900 font-sans">
-      <section id="Home" className="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-gray-800 to-gray-900 px-4 relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-40"></div>
+  const scrollToSection = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  };
 
-        <h1 className="text-6xl font-extrabold mb-4 text-white drop-shadow-lg">Let's step inside!</h1>
-        <p className="text-xl mb-6 text-gray-300">Welcome to my journey</p>
-        <a 
-          href="#About" 
-          className="text-lg bg-yellow-300 text-gray-900 py-3 px-8 rounded-full hover:bg-yellow-200 hover:scale-105 transition-all duration-300 shadow-lg"
+  return (
+    <main className="font-sans">
+      <section id="Home" className="h-screen flex flex-col justify-center items-center text-center bg-white px-4 relative">
+        <h1 className="text-6xl font-extrabold mb-2 text-gray-900 drop-shadow-lg tracking-tight">Let's step inside!</h1>
+        <div className="border-t border-gray-500 w-20 my-4"></div> 
+        <p className="text-xl mb-8 text-gray-900 opacity-90 max-w-lg">Welcome to my journey</p>
+        <button 
+          onClick={() => scrollToSection('About')}
+          className="bg-yellow-300 text-lg hover:bg-yellow-200 text-gray-900 font-bold px-4 py-3 rounded-full transition-transform transform hover:scale-105"
         >
-          Scroll Down
-        </a>
+          Learn More
+        </button>
       </section>
 
-      <section id="About" className="h-screen flex flex-col lg:flex-row justify-center items-center gap-40 g-gradient-to-r from-blue-300 to-blue-400 px-8 py-20">
+
+      <section id="About" className="h-screen flex flex-col lg:flex-row justify-center items-center gap-40 bg-gradient-to-r from-gray-800 to-gray-900 px-8 py-20">
         <div className="">
           <img src={fotodiri} alt="Muhammad Fatih Zamzami" className="w-64 h-64 object-cover rounded-full shadow-xl transform transition duration-500 hover:scale-105" />
         </div>

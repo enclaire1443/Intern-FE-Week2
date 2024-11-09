@@ -11,7 +11,7 @@ const Contact = () => {
         <p className="text-lg font-semibold mb-2 text-gray-100">Connect with Me</p>
         <p className="text-sm mb-6 text-gray-400">Feel free to contact me !!</p>
         
-        <div className="space-y-3">
+        <div className="space-y-2">
           <div className="flex items-center space-x-4">
             <a
               href="mailto:muhfatihzamzami@gmail.com"
@@ -22,7 +22,7 @@ const Contact = () => {
             </a>
           </div>
 
-          <div className="flex flex-col space-y-4 mt-4">
+          <div className="flex flex-col space-y-2 mt-4">
             <a
               href="https://www.instagram.com/fthzami"
               target="_blank"
