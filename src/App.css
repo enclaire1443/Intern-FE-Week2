@@ -1,3 +1,20 @@
 html {
     scroll-behavior: smooth;
   }
+.page-transition-container {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+.page-transition-content {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Optional: Customize the page fade effect */
+.page-transition-container.fade-enter {
+    opacity: 0;
+  }
+  
+.page-transition-container.fade-enter-active {
+    opacity: 1;
+  }
