@@ -8,8 +8,8 @@ const Contact = () => {
   return (
     <div className="bg-gray-900 text-gray-300 py-8 px-8 mt-16 shadow-lg">
       <div className="max-w-3xl mx-auto">
-        <p className="text-lg font-semibold mb-2 text-gray-100">Connect with Me</p>
-        <p className="text-sm mb-6 text-gray-400">Feel free to contact me !!</p>
+        <p className="text-lg font-semibold mb-2 text-gray-100">Get in Touch</p>
+        <p className="text-sm mb-6 text-gray-400"> Connect with me using the links down below. </p>
         
         <div className="space-y-2">
           <div className="flex items-center space-x-4">
@@ -49,8 +49,8 @@ const Contact = () => {
               rel="noopener noreferrer"
               className="flex items-center space-x-2 hover:text-yellow-400 transition duration-200"
             >
-              <img src={linkedinIcon} alt="LinkedIn" className="w-5 h-5 opacity-90 hover:opacity-100 transition duration-200" />
-              <span className="text-sm">LinkedIn: Fatih Zamzami</span>
+              <img src={linkedinIcon} alt="LinkedIn" className="w-5 h-5 opacity-90 hover:opacity-100 transition transform duration-200" />
+              <span className="text-sm">LinkedIn: fatih amzami</span>
             </a>
           </div>
         </div>

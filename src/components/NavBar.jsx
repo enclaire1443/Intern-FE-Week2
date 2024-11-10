@@ -14,7 +14,7 @@ const NavBar = () => {
       <Link to="/" className="text-2xl font-bold text-white hover:text-yellow-400 transition duration-200">
         Fatih
       </Link>
-      <div className="flex gap-6 text-xs font-semibold">
+      <div className="flex gap-6 text-s font-semibold">
         <Link to="#About" onClick={() => scrollToSection('About')} className="hover:text-yellow-400 transition duration-200">
           About
         </Link>

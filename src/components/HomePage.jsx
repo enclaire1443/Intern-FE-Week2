@@ -5,7 +5,7 @@ import fototim3 from '../assets/fototim3.jpeg';
 import { Link } from 'react-router-dom';
 
 const HomePage = () => {
-  const images = [fototim1, fototim2, fototim3];
+  const images = [fototim3, fototim1, fototim2];
   const [currentImage, setCurrentImage] = useState(0);
   const [fade, setFade] = useState(true); // For fade effect
 
