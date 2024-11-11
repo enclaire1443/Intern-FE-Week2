@@ -11,9 +11,7 @@ const Contact = () => {
         <p className="text-lg font-semibold mb-2 text-gray-100">Get in Touch</p>
         <p className="text-sm mb-6 text-gray-400"> Connect with me using the links down below. </p>
         
-        {/* Flex container to separate left and right sections */}
         <div className="flex gap-x-10">
-          {/* Left side (Email and LinkedIn) */}
           <div className="space-y-4">
             <a
               href="mailto:muhfatihzamzami@gmail.com"
@@ -34,7 +32,6 @@ const Contact = () => {
             </a>
           </div>
 
-          {/* Right side (Instagram and Line) */}
           <div className="space-y-4 text-right">
             <a
               href="https://line.me/ti/p/haiinifatih"
@@ -67,3 +64,71 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

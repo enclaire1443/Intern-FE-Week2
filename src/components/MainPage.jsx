@@ -21,7 +21,6 @@ const MainPage = () => {
         </button>
       </section>
 
-
       <section id="About" className="h-screen flex flex-col lg:flex-row justify-center items-center gap-20 bg-gradient-to-r from-gray-800 to-gray-900 px-8 py-20">
         <div className="flex justify-center lg:justify-start">
           <img src={fotodiri} alt="Muhammad Fatih Zamzami" className="w-64 h-64 object-cover rounded-full shadow-xl transform transition duration-500 hover:scale-105" />
@@ -63,7 +62,7 @@ const MainPage = () => {
 
             <div className="bg-white text-gray-900 p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
               <h3 className="text-2xl font-semibold text-gray-800 mb-2">Potluck Event Staff at GADEENG 2024</h3>
-              <p className="text-base">I worked as a staff member for the Potluck Event at GADEENG 2024.</p>
+              <p className="text-base">I worked as a staff member for the Potluck Event at GADEENG 2024. Here, i learn about masses mobilization and logistic coordination</p>
             </div>
 
             <div className="bg-white text-gray-900 p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">

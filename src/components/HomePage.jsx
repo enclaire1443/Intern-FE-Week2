@@ -19,7 +19,7 @@ const HomePage = () => {
         setFade(true); // Fade back in
       }, 500); // Adjust this delay to control fade timing
 
-    }, 3000); // Change image every 3 seconds
+    }, 6000); // Change image every 3 seconds
 
     return () => clearInterval(interval);
   }, []);
