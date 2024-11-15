@@ -10,9 +10,13 @@ const MainPage = () => {
   return (
     <main className="font-sans">
       <section id="Home" className="h-screen flex flex-col justify-center items-center text-center bg-white px-4 relative">
-        <h1 className="text-6xl font-extrabold mb-2 text-gray-900 drop-shadow-lg tracking-tight">Let's step inside!</h1>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-2 text-gray-900 drop-shadow-lg tracking-tight">
+          Let's step inside!
+        </h1>
         <div className="border-t border-gray-500 w-20 my-4"></div> 
-        <p className="text-xl mb-8 text-gray-900 opacity-90 max-w-lg">Welcome to my journey</p>
+        <p className="text-lg sm:text-xl mb-8 text-gray-900 opacity-90 max-w-lg">
+          Welcome to my journey
+        </p>
         <button 
           onClick={() => scrollToSection('About')}
           className="bg-yellow-300 text-lg hover:bg-yellow-200 text-gray-900 font-bold px-4 py-3 rounded-full transition-transform transform hover:scale-105"
@@ -62,13 +66,14 @@ const MainPage = () => {
 
             <div className="bg-white text-gray-900 p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
               <h3 className="text-2xl font-semibold text-gray-800 mb-2">Potluck Event Staff at GADEENG 2024</h3>
-              <p className="text-base">I worked as a staff member for the Potluck Event at GADEENG 2024. Here, i learn about masses mobilization and logistic coordination</p>
+              <p className="text-base">I worked as a staff member for the Potluck Event at GADEENG 2024. Here, I learned about mass mobilization and logistic coordination.</p>
             </div>
 
             <div className="bg-white text-gray-900 p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
               <h3 className="text-2xl font-semibold text-gray-800 mb-2">Exercise FTUI Internship 2024</h3>
               <p className="text-base">Currently interning at Exercise FTUI, working on web development projects using ReactJS and TailwindCSS.</p>
             </div>
+
             <div className="col-span-2 flex justify-center items-center text-center mt-6">
               <h3 className="text-2xl font-semibold text-white">and more to come...</h3>
             </div>

@@ -7,19 +7,18 @@ import { Link } from 'react-router-dom';
 const HomePage = () => {
   const images = [fototim3, fototim1, fototim2];
   const [currentImage, setCurrentImage] = useState(0);
-  const [fade, setFade] = useState(true); // For fade effect
+  const [fade, setFade] = useState(true); 
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setFade(false); // Start fading out
+      setFade(false); 
 
-      // Set the next image after a short delay to allow fade-out effect
       setTimeout(() => {
         setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-        setFade(true); // Fade back in
-      }, 500); // Adjust this delay to control fade timing
+        setFade(true); 
+      }, 500);
 
-    }, 6000); // Change image every 3 seconds
+    }, 3500);
 
     return () => clearInterval(interval);
   }, []);

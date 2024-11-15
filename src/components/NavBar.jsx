@@ -10,11 +10,11 @@ const NavBar = () => {
   };
 
   return (
-    <div className="bg-gray-900 w-full h-16 flex justify-between items-center text-white fixed top-0 z-50 rounded-b-lg shadow-lg px-8">
+    <div className="bg-gray-900 w-full h-16 flex justify-between items-center text-white fixed top-0 z-50 rounded-b-lg shadow-lg px-4 sm:px-8">
       <Link to="/" className="text-2xl font-bold text-white hover:text-yellow-400 transition duration-200">
         Fatih
       </Link>
-      <div className="flex gap-6 text-s font-semibold">
+      <div className="flex gap-6 text-sm font-semibold sm:flex-row flex-col sm:items-center items-start">
         <Link to="#About" onClick={() => scrollToSection('About')} className="hover:text-yellow-400 transition duration-200">
           About
         </Link>
