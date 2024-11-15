@@ -25,20 +25,21 @@ const MainPage = () => {
         </button>
       </section>
 
-      <section id="About" className="h-screen flex flex-col lg:flex-row justify-center items-center gap-20 bg-gradient-to-r from-gray-800 to-gray-900 px-8 py-20">
-        <div className="flex justify-center lg:justify-start">
-          <img src={fotodiri} alt="Muhammad Fatih Zamzami" className="w-64 h-64 object-cover rounded-full shadow-xl transform transition duration-500 hover:scale-105" />
-        </div>
-        <div className="lg:w-1/2 text-center lg:text-left mt-8 lg:mt-0 max-w-3xl">
-          <h2 className="text-4xl font-semibold text-yellow-300 mb-4">About Me</h2>
-          <p className="text-lg text-white px-4 lg:px-0">
-            I'm Muhammad Fatih Zamzami, an ambitious Electrical Engineering student at the Universitas Indonesia. Passionate about technology, science, and mathematics, I'm driven to make a positive societal impact through innovation.
-          </p>
-          <p className="text-lg text-white px-4 lg:px-0 mt-4">
-            As a freshman, I'm currently learning about the fundamentals of mathematics like calculus 1, 2, 3 and linear algebra. I'm also currently very passionate and learning front-end web development with ReactJS and TailwindCSS.
-          </p>
-        </div>
-      </section>
+      <section id="About" className="min-h-screen flex flex-col lg:flex-row justify-center items-center gap-10 bg-gradient-to-r from-gray-800 to-gray-900 px-4 py-16 md:py-20">
+  <div className="flex justify-center lg:justify-start">
+    <img src={fotodiri} alt="Muhammad Fatih Zamzami" className="w-40 h-40 sm:w-48 sm:h-48 lg:w-64 lg:h-64 object-cover rounded-full shadow-xl transform transition duration-500 hover:scale-105" />
+  </div>
+  <div className="lg:w-1/2 text-center lg:text-left mt-8 lg:mt-0 max-w-lg sm:max-w-xl lg:max-w-3xl px-4 lg:px-0">
+    <h2 className="text-3xl sm:text-4xl font-semibold text-yellow-300 mb-4">About Me</h2>
+    <p className="text-base sm:text-lg text-white mt-4">
+      I'm Muhammad Fatih Zamzami, an ambitious Electrical Engineering student at the Universitas Indonesia. Passionate about technology, science, and mathematics, I'm driven to make a positive societal impact through innovation.
+    </p>
+    <p className="text-base sm:text-lg text-white mt-4">
+      As a freshman, I'm currently learning the fundamentals of mathematics like calculus 1, 2, 3, and linear algebra. I'm also passionate about front-end web development with ReactJS and TailwindCSS.
+    </p>
+  </div>
+
+</section>
 
       <section id="Projects" className="h-screen bg-white text-gray-900 px-8 py-20 flex flex-col justify-center items-center">
         <h2 className="text-4xl font-semibold mb-6 from-gray-800 text-center">My Projects</h2>

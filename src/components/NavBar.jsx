@@ -17,7 +17,6 @@ const NavBar = () => {
         Fatih
       </Link>
 
-      {/* Mobile Menu Button */}
       <div className="sm:hidden">
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -27,7 +26,6 @@ const NavBar = () => {
         </button>
       </div>
 
-      {/* Desktop Links (Hidden on mobile) */}
       <div className="hidden sm:flex gap-6 text-s font-semibold">
         <Link to="#About" onClick={() => scrollToSection('About')} className="hover:text-yellow-400 transition duration-200">
           About
@@ -40,9 +38,8 @@ const NavBar = () => {
         </Link>
       </div>
 
-      {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="sm:hidden absolute top-16 right-8 bg-gray-900 text-white shadow-lg p-4 rounded-lg">
+        <div className="sm:hidden absolute top-16 right-8 bg-gray-900 text-white shadow-lg p-4 rounded-xl">
           <Link
             to="#About"
             onClick={() => {
