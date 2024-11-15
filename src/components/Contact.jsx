@@ -6,7 +6,7 @@ import mailIcon from '../assets/mail.png';
 
 const Contact = () => {
   return (
-    <div className="bg-gray-900 text-gray-300 py-8 px-8 mt-16 shadow-lg">
+    <div className="bg-gray-900 text-gray-300 py-8 px-8 shadow-lg">
       <div className="max-w-3xl mx-auto">
         <p className="text-lg font-semibold mb-2 text-gray-100">Get in Touch</p>
         <p className="text-sm mb-6 text-gray-400">Connect with me using the links down below.</p>
@@ -60,7 +60,6 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* Footer */}
       <p className="text-xs text-gray-500 mt-8 text-center border-t border-gray-700 pt-4">
         &copy; 2024 Muhammad Fatih Zamzami. All rights reserved.
       </p>
