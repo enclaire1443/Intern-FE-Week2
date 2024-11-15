@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
@@ -10,11 +12,23 @@ const NavBar = () => {
   };
 
   return (
-    <div className="bg-gray-900 w-full h-16 flex justify-between items-center text-white fixed top-0 z-50 rounded-b-lg shadow-lg px-4 sm:px-8">
+    <div className="bg-gray-900 w-full h-16 flex justify-between items-center text-white fixed top-0 z-50 rounded-b-lg shadow-lg px-8">
       <Link to="/" className="text-2xl font-bold text-white hover:text-yellow-400 transition duration-200">
         Fatih
       </Link>
-      <div className="flex gap-6 text-sm font-semibold sm:flex-row flex-col sm:items-center items-start">
+
+      {/* Mobile Menu Button */}
+      <div className="sm:hidden">
+        <button
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          className="text-white text-2xl"
+        >
+          ☰
+        </button>
+      </div>
+
+      {/* Desktop Links (Hidden on mobile) */}
+      <div className="hidden sm:flex gap-6 text-s font-semibold">
         <Link to="#About" onClick={() => scrollToSection('About')} className="hover:text-yellow-400 transition duration-200">
           About
         </Link>
@@ -25,6 +39,42 @@ const NavBar = () => {
           Experience
         </Link>
       </div>
+
+      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+        <div className="sm:hidden absolute top-16 right-8 bg-gray-900 text-white shadow-lg p-4 rounded-lg">
+          <Link
+            to="#About"
+            onClick={() => {
+              scrollToSection('About');
+              setIsMobileMenuOpen(false);
+            }}
+            className="block px-4 py-2 hover:text-yellow-400 transition duration-200"
+          >
+            About
+          </Link>
+          <Link
+            to="#Projects"
+            onClick={() => {
+              scrollToSection('Projects');
+              setIsMobileMenuOpen(false);
+            }}
+            className="block px-4 py-2 hover:text-yellow-400 transition duration-200"
+          >
+            Projects
+          </Link>
+          <Link
+            to="#Experience"
+            onClick={() => {
+              scrollToSection('Experience');
+              setIsMobileMenuOpen(false);
+            }}
+            className="block px-4 py-2 hover:text-yellow-400 transition duration-200"
+          >
+            Experience
+          </Link>
+        </div>
+      )}
     </div>
   );
 };
