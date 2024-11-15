@@ -12,7 +12,6 @@ const Contact = () => {
         <p className="text-sm mb-6 text-gray-400">Connect with me using the links down below.</p>
 
         <div className="flex flex-col lg:flex-row gap-x-10 lg:gap-x-20">
-          {/* Left section: Email & LinkedIn */}
           <div className="space-y-4 mb-6 lg:mb-0">
             <a
               href="mailto:muhfatihzamzami@gmail.com"
@@ -35,10 +34,9 @@ const Contact = () => {
             </a>
           </div>
 
-          {/* Right section: Line & Instagram */}
           <div className="space-y-4 text-right">
             <a
-              href="https://line.me/ti/p/haiinifatih"
+              href="https://line.me/R/ti/p/haiinifatih"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visit LINE profile of Fatih Zamzami"
