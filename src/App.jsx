@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 function App() {
   return (
     <Router>
+      <NavBar />
       <div className="content">
         <Routes>
           <Route path="/" element={<HomePage />} />
