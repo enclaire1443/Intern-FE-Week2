@@ -3,7 +3,6 @@ import fototim1 from '../assets/fototim1.jpeg';
 import fototim2 from '../assets/fototim2.jpeg';
 import fototim3 from '../assets/fototim3.jpeg';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
 
 const HomePage = () => {
   const images = [fototim3, fototim1, fototim2];
@@ -24,28 +23,14 @@ const HomePage = () => {
     return () => clearInterval(interval);
   }, []);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await axios.get('https://api.github.com/users/rastuak');
-        console.log(res.data);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-
-    fetchData();
-  }, []);
-
-
   return (
     <div className="relative w-full h-screen bg-gray-900 pt-20">
       <div
         className={`absolute inset-0 bg-cover bg-center transition-opacity duration-500 ease-in-out ${
           fade ? 'opacity-100' : 'opacity-0'
         }`}
-        style={{ backgroundImage: `url(${images[currentImage]})` }}
-      />
+        style={{ backgroundImage: `url(${images[currentImage]})` }} // listNama[0]
+         />
 
       <div className="relative z-10 flex justify-center items-center w-full h-full text-center">
         <div className="text-white">
